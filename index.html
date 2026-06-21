@@ -1,11 +1,299 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO básico -->
+  <meta name="description" content="Portafolio de Sergio Velandia, desarrollador de software backend con C# y ASP.NET Core." />
+  <meta name="keywords" content="Sergio Velandia, desarrollador software, backend, C#, ASP.NET Core, SQL Server, Bogotá" />
+  <meta name="author" content="Sergio Velandia" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sergio Velandia | Desarrollador de Software" />
+  <meta property="og:description" content="Desarrollador backend con C# y ASP.NET Core. Disponible para prácticas desde julio 2026." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://soysergy.github.io/Portafolio" />
+  <meta property="og:image" content="https://soysergy.github.io/Portafolio/assets/img/preview.png" />
+
+  <!-- Twitter/X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sergio Velandia | Desarrollador de Software" />
+  <meta name="twitter:description" content="Desarrollador backend con C# y ASP.NET Core. Disponible para prácticas desde julio 2026." />
+  <meta name="twitter:image" content="https://soysergy.github.io/Portafolio/assets/img/preview.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/img/favicon.ico" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <title>Sergio Velandia | Desarrollador de Software</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-    
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__container">
+      <a href="#inicio" class="navbar__logo">SV</a>
+      <nav class="navbar__nav">
+        <ul class="navbar__list">
+          <li><a href="#sobre-mi" class="navbar__link">Sobre mí</a></li>
+          <li><a href="#stack" class="navbar__link">Stack</a></li>
+          <li><a href="#proyectos" class="navbar__link">Proyectos</a></li>
+          <li><a href="#experiencia" class="navbar__link">Experiencia</a></li>
+          <li><a href="#educacion" class="navbar__link">Educación</a></li>
+          <li><a href="#cursos" class="navbar__link">Cursos</a></li>
+          <li><a href="#contacto" class="navbar__link">Contacto</a></li>
+        </ul>
+      </nav>
+      <button class="navbar__toggle" id="navbar-toggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="inicio">
+      <div class="hero__container">
+        <p class="hero__greeting">Hola, soy</p>
+        <h1 class="hero__name">Sergio Velandia</h1>
+        <p class="hero__role">&gt; <span id="typed-role"></span><span class="hero__cursor">_</span></p>
+      </div>
+    </section>
+
+    <!-- ===== SOBRE MÍ ===== -->
+    <section class="about" id="sobre-mi">
+      <div class="section__container">
+        <h2 class="section__title">Sobre <span class="text--accent">mí</span></h2>
+        <div class="about__content">
+          <div class="about__text">
+            <p>
+              Soy estudiante de Tecnología en Análisis y Desarrollo de Software en el SENA, con interés genuino por entender cómo funcionan las cosas por dentro. Me gusta el desarrollo backend, construir APIs REST bien estructuradas y aplicar conceptos como inyección de dependencias, arquitectura por capas y autenticación JWT.
+            </p>
+          </div>
+          <div class="about__tags">
+            <span class="tag">C#</span>
+            <span class="tag">Python</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">SQL</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">ASP.NET Core</span>
+            <span class="tag">SQL Server</span>
+            <span class="tag">Git</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Postman</span>
+            <span class="tag">JWT</span>
+            <span class="tag">Scrum</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STACK ===== -->
+    <section class="stack" id="stack">
+      <div class="section__container">
+        <h2 class="section__title">Stack <span class="text--accent">tecnológico</span></h2>
+        <div class="stack__grid">
+
+          <div class="stack__card">
+            <h3 class="stack__category">Lenguajes</h3>
+            <ul class="stack__list">
+              <li>C#</li>
+              <li>Python</li>
+              <li>JavaScript</li>
+              <li>SQL</li>
+              <li>HTML & CSS</li>
+            </ul>
+          </div>
+
+          <div class="stack__card">
+            <h3 class="stack__category">Backend</h3>
+            <ul class="stack__list">
+              <li>ASP.NET Core Web API</li>
+              <li>APIs REST</li>
+              <li>JWT</li>
+              <li>Inyección de dependencias</li>
+            </ul>
+          </div>
+
+          <div class="stack__card">
+            <h3 class="stack__category">Base de datos</h3>
+            <ul class="stack__list">
+              <li>SQL Server</li>
+              <li>Entity Framework</li>
+              <li>CRUD</li>
+            </ul>
+          </div>
+
+          <div class="stack__card">
+            <h3 class="stack__category">Herramientas</h3>
+            <ul class="stack__list">
+              <li>Git & GitHub</li>
+              <li>Docker</li>
+              <li>Postman</li>
+              <li>Visual Studio</li>
+              <li>VS Code</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROYECTOS ===== -->
+    <section class="projects" id="proyectos">
+      <div class="section__container">
+        <h2 class="section__title">Mis <span class="text--accent">proyectos</span></h2>
+        <div class="projects__grid">
+
+          <article class="project-card">
+            <div class="project-card__header">
+              <h3 class="project-card__title">RecyRoute</h3>
+              <span class="project-card__status">En desarrollo</span>
+            </div>
+            <p class="project-card__description">
+              API REST que permite a los usuarios solicitar la recolección de residuos reciclables directamente desde su domicilio. Un reciclador recibe la solicitud y se desplaza hasta la dirección indicada para recoger los materiales o electrodomésticos en desuso.
+            </p>
+            <ul class="project-card__features">
+              <li>Arquitectura por capas (controladores, repositorios e interfaces)</li>
+              <li>Autenticación JWT</li>
+              <li>Inyección de dependencias</li>
+              <li>Conexión a SQL Server mediante DbContext</li>
+            </ul>
+            <div class="project-card__tags">
+              <span class="tag">C#</span>
+              <span class="tag">ASP.NET Core</span>
+              <span class="tag">SQL Server</span>
+            </div>
+            <a href="https://github.com/SoySergy/proyectosena" target="_blank" rel="noopener noreferrer" class="btn btn--outline">Ver en GitHub</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCIA ===== -->
+    <section class="experience" id="experiencia">
+      <div class="section__container">
+        <h2 class="section__title">Experiencia <span class="text--accent">laboral</span></h2>
+        <div class="experience__list">
+
+          <article class="experience-card">
+            <div class="experience-card__header">
+              <div>
+                <p class="experience-card__company">Accenture · Career Launch Program</p>
+                <h3 class="experience-card__title">Practicante de Desarrollo de Software</h3>
+              </div>
+              <span class="experience-card__status">Próximo</span>
+            </div>
+            <p class="experience-card__date">
+              <i class="fa-regular fa-clock"></i> Julio 2026 – Enero 2027 · Bogotá, Colombia
+            </p>
+            <p class="experience-card__description">
+              Programa de prácticas profesionales enfocado en desarrollo de software dentro de un entorno corporativo real.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EDUCACIÓN ===== -->
+    <section class="education" id="educacion">
+      <div class="section__container">
+        <h2 class="section__title"><span class="text--accent">Educación</span></h2>
+        <div class="timeline">
+
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2024 – Actualidad</span>
+              <h3 class="timeline__title">Tecnólogo en Análisis y Desarrollo de Software</h3>
+              <p class="timeline__subtitle">SENA · Prácticas desde julio 2026</p>
+            </div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">Anterior</span>
+              <h3 class="timeline__title">Bachiller Académico</h3>
+              <p class="timeline__subtitle">Colegio Orlando Higuita Rojas IED</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CURSOS ===== -->
+    <section class="courses" id="cursos">
+      <div class="section__container">
+        <h2 class="section__title"><span class="text--accent">Cursos</span></h2>
+        <div class="courses__grid">
+
+          <article class="course-card">
+            <div class="course-card__header">
+              <span class="course-card__platform">Udemy</span>
+              <span class="course-card__date">2024</span>
+            </div>
+            <h3 class="course-card__title">C# Curso desde cero para ser programador .NET</h3>
+            <a href="https://ude.my/UC-1d82ce3a-4e33-4b59-9f45-1c9045f5af7d" target="_blank" rel="noopener noreferrer" class="btn btn--outline">Ver certificado</a>
+          </article>
+
+          <article class="course-card">
+            <div class="course-card__header">
+              <span class="course-card__platform">SENA</span>
+              <span class="course-card__date">2024</span>
+            </div>
+            <h3 class="course-card__title">Aplicación del Marco de Trabajo Scrum para Proyectos de Desarrollo de Software</h3>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+<section class="contact" id="contacto">
+  <div class="section__container">
+    <h2 class="section__title">¿Hablamos? <span class="text--accent">Contáctame</span></h2>
+    <p class="contact__description">
+      Puedes escribirme por cualquiera de estos medios.
+    </p>
+    <div class="contact__links">
+      <div class="contact__item">
+        <i class="fa-solid fa-envelope contact__icon"></i>
+        <span>sergioorlandovq@gmail.com</span>
+      </div>
+      <a href="https://www.linkedin.com/in/sergiovelandia/" target="_blank" rel="noopener noreferrer" class="contact__item">
+        <i class="fa-brands fa-linkedin contact__icon"></i>
+        <span>linkedin.com/in/soysergy</span>
+      </a>
+      <a href="https://github.com/SoySergy" target="_blank" rel="noopener noreferrer" class="contact__item">
+        <i class="fa-brands fa-github contact__icon"></i>
+        <span>github.com/SoySergy</span>
+      </a>
+    </div>
+    <a href="assets/cv/Hoja de vida Sergio Velandia.pdf" download class="btn btn--primary">Descargar CV</a>
+  </div>
+</section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>Hecho por <span class="text--accent">Sergio Velandia</span> · <span id="footer-year"></span></p>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
